@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ระบบเช็คชื่อ - วิลัย K-Tech</title>
+    <title>ระบบเช็คชื่อ - วิทยาลัยเทคโนโลยีการจัดการขอนแก่น</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://cdn.jsdelivr.net/npm/qrcode@1.5.3/build/qrcode.min.js"></script>
     <style>
@@ -533,7 +533,7 @@
                         </div>
                         
                         <div class="flex space-x-4">
-                            <input type="text" placeholder="ค้นหานักเรียน..." class="flex-1 px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-purple-500 focus:border-transparent" id="searchInput" onkeyup="filterStudents()">
+                            <input type="text" placeholder="ค้นหานักศึกษา..." class="flex-1 px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-purple-500 focus:border-transparent" id="searchInput" onkeyup="filterStudents()">
                             <select class="px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-purple-500" id="statusFilter" onchange="filterStudents()">
                                 <option value="">ทั้งหมด</option>
                                 <option value="present">เข้าเรียน</option>
@@ -1226,7 +1226,7 @@
             const lateStudents = students.filter(s => s.status === 'late');
             
             if (absentStudents.length === 0 && lateStudents.length === 0) {
-                showNotification('ไม่มีนักเรียนขาดเรียนหรือมาสาย ไม่ต้องส่งการแจ้งเตือน');
+                showNotification('ไม่มีนักศึกษาขาดเรียนหรือมาสาย ไม่ต้องส่งการแจ้งเตือน');
                 return;
             }
             
@@ -1371,4 +1371,5 @@
     </script>
 <script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'97b86363676a4112',t:'MTc1NzI3MDk4OS4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
 </html>
+
 
